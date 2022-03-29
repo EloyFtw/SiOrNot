@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Te hice esta paginita</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function cuandoDigaSi(){
+            resp1="Yo te amo mucho ♥";
+            resp2 = "Ya te quiero ver mañana :3";
+
+            document.getElementById('lblResultado').innerHTML = resp1;
+            document.getElementById('lblResultado1').innerHTML = resp2;
+
+            document.getElementById('btnNo').style.visibility = "hidden";
+            document.getElementById('btnSi').style.visibility = "hidden";
+        }
+        function cuandoDigaNo(){
+            ancho= window.innerWidth;
+            alto=window.innerHeight;
+
+            x= (Math.random()*ancho) + "px";
+            y= (Math.random()*alto) + "px";
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left=x;
+            document.getElementById('btnNo').style.left=y;
+        }
+    </script>
+</head>
+<body>
+    <h1> Te amo mucho, ¿tu me quieres? </h1>
+    <a id="btnSi" onclick="cuandoDigaSi()"> Si </a>
+    <a id="btnNo" onmouseover="cuandoDigaNo()"> No </a> <br>
+
+   
+    <p id="lblResultado"> </p>
+    <p id="lblResultado1"></p>
+   
+    
+</body>
+</html>

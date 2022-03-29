@@ -1,0 +1,27 @@
+body{
+    background: linear-gradient(to right, #000, rgb(182, 29, 29));
+    text-align: center;
+}
+body a{
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 20%;
+    background-color: gold;
+    color: black;
+    margin: 10px;
+    cursor: pointer;
+}
+p{
+    color: white;
+    font-size: 30px;
+}
+h1{
+    color: white;
+    background-color: red;
+    font-size: 80px;
+    border-radius: 15px;
+    padding:10px;
+    margin: 50px;
+    box-shadow: 3px 3px rebeccapurple, 5px 0 1em blue;
+
+}
